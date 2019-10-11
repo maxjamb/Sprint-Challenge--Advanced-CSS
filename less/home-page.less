@@ -6,10 +6,16 @@
 
     h2 {
       padding: 15px;
+      @media @mobile{
+        padding: 15px 0;
+      }
     }
 
     p {
       padding:0 15px;
+      @media @mobile{
+        padding: 0 0;
+      }
     }
   
   }
@@ -24,6 +30,11 @@
       margin: 20px 2.5%;
       border-radius: 20px;
       height: 100%;
+      @media @mobile{
+        width:100%;
+        margin: 15px auto;
+      }
+
     }
   }
 
@@ -37,6 +48,10 @@
     p {
       margin-top: 13px;
     }
+    @media @mobile{
+      padding: 0;
+    }
+
   }
 
   .walk {
@@ -45,16 +60,33 @@
     padding: 50px 60px;
     display: flex;
     justify-content: center;
+    @media @mobile{
+      width: 100%;
+      padding:15px 0px 5px 0px;
+      margin-top: 20px;
+      // background:red;
+    }
 
     .walk-text {
       width: 50%;
+      @media @mobile{
+        width: 100%;
+        padding: 5% 0 0 0;
+      }
 
       h3 {
         margin-bottom: 10px;
+        @media @mobile{
+          width: 100%;
+        }
       }
 
       p {
         margin-bottom: 26px;
+        @media @mobile{
+        width: 100%;
+      }
+        
       }
 
       .btn {
@@ -70,11 +102,18 @@
     .walk-img {
       width: 46%;
       margin-left: 4%;
+      @media @mobile{
+        width: 100%;
+        margin: 0 auto;
+      }
       
       img {
         width: 100%;
         height: auto;
         border-radius: 10px;
+        @media @mobile{
+          width: 100%;
+        }
       }
     }
   }
@@ -93,33 +132,40 @@
   }
 }
 
-.launch{
+.blast{
   @media @mobile{
     width: 100%;
   }
 }
 }
 
+.banner{
+  display:flex;
+  align-items: center;
+  margin: 0 auto;
+  max-width:800px;
+
+    img{
+      margin: 0 auto;
+      display:flex;
+      justify-content: center;
+        width: 100%;
+    }
+}
 #container{
   @media @mobile{
-  background: red;
+  // background: red;
+  max-width:90%;
 }}
 
-@media @mobile{
-  .banner{
-  width: 100%;
-}}
+
 
 .walk{
   @media @mobile{
     display: flex;
       flex-direction: column-reverse;
       align-items: center;
-      padding: initial;
+      padding: none;
 }}
-
-
-
-
 
 // home
